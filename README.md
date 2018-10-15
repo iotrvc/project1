@@ -6,7 +6,7 @@ Adafruit PIR (Motion) Sensor
 
 ### Step 1: Set up your Photon
 - Using Your Computer: Go to particle.io/setup and follow the instructions to create an account and set up your Photon.
-- Using Your Phone & Download the Particle Mobile App [iPhone | Android] to create an account and set up your Photon.
+- Using Your Phone & Download the Particle Mobile App [iPhone](https://itunes.apple.com/us/app/particle-build-photon-electron/id991459054?ls=1&mt=8) & [Android](https://play.google.com/store/apps/details?id=io.particle.android.app) to create an account and set up your Photon.
 
 <img src="9.jpg" width="500">
 
