@@ -16,7 +16,7 @@ Sensor Pin | Photon Pin
        GND | GND (BLUE)
        OUT | D0 (YELLOW)
 
-
+![GitHub Logo](6.jpg)
 ￼
 
 ### Step 3: Setup Push Notifications
