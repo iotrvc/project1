@@ -10,6 +10,8 @@ Adafruit PIR (Motion) Sensor
 
 <img src="9.jpg" width="500">
 
+<hr>
+
 ### Step 2: Connect Motion Sensor to Photon
 Connect your sensor to a digital or analog input on the Photon. Follow these examples for hooking up common sensors.
 
@@ -20,6 +22,7 @@ Sensor Pin | Photon Pin
 
 <img src="6.jpg" width="500">
 
+<hr>
 
 ### Step 3: Setup Push Notifications
 To receive your push notification there is a little setup if you’ve never done it before, but once you do you’ll never have to touch it again. There are a ton of services you could use, but the one I like is Pushover.net328. Setup an account with Pushover then follow these instructions:
@@ -37,6 +40,8 @@ To receive your push notification there is a little setup if you’ve never done
 - Send a test message and make sure it’s working!
 - Register an application. Call it whatever you want it doesn’t really matter.
 - When you are done click on the application’s name from step 5 and copy the API Token/Key from that page. This is the value for the token query field below.
+
+<hr>
 
 ### Step 4: Create a WebHook
 
@@ -61,6 +66,8 @@ To receive your push notification there is a little setup if you’ve never done
 ```
 
 - Click Create WebHook
+
+<hr>
 
 ### Step 5: Create Particle App
 
