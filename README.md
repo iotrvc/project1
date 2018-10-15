@@ -19,7 +19,8 @@ Sensor Pin | Photon Pin
        OUT | D0 (YELLOW)
 
 <img src="6.jpg" width="500">
-￼
+
+
 ### Step 3: Setup Push Notifications
 To receive your push notification there is a little setup if you’ve never done it before, but once you do you’ll never have to touch it again. There are a ton of services you could use, but the one I like is Pushover.net328. Setup an account with Pushover then follow these instructions:
 
