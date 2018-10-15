@@ -5,29 +5,29 @@ Particle Photon Development Kit
 Adafruit PIR (Motion) Sensor
 
 ### Step 1: Set up your Photon
-* Using Your Computer: Go to particle.io/setup and follow the instructions to create an account and set up your Photon.
-* Using Your Phone: Download the Particle Mobile App [iPhone | Android] to create an account and set up your Photon.
+- Using Your Computer: Go to particle.io/setup and follow the instructions to create an account and set up your Photon.
+- Using Your Phone: Download the Particle Mobile App [iPhone | Android] to create an account and set up your Photon.
 
 <img src="9.jpg" width="500">
 
 <hr>
 
 ### Step 2: Connect Motion Sensor to Photon
-Connect your sensor to a digital or analog input on the Photon. Follow these examples for hooking up common sensors.
-
+- Connect your sensor to a digital or analog input on the Photon. Follow these examples for hooking up common sensors.
+```
 Sensor Pin | Photon Pin
        VCC | VIN (RED)
        GND | GND (BLUE)
        OUT | D0 (YELLOW)
-
+```
 <img src="6.jpg" width="500">
 
 <hr>
 
 ### Step 3: Setup Push Notifications
-To receive your push notification there is a little setup if you’ve never done it before, but once you do you’ll never have to touch it again. There are a ton of services you could use, but the one I like is Pushover.net328. Setup an account with Pushover then follow these instructions:
+To receive your push notification there is a little setup if you’ve never done it before, but once you do you’ll never have to touch it again. There are a ton of services you could use, but the one I like is Pushover.net. 
 
-- Setup New Account
+- Setup an account with [Pushover.net](https://pushover.net/) then follow these instructions:
 - Follow below steps (see below image)
 
 ￼<img src="8.jpg" width="500">
