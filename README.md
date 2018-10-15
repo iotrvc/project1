@@ -8,6 +8,8 @@ Adafruit PIR (Motion) Sensor
 * Using Your Computer: Go to particle.io/setup and follow the instructions to create an account and set up your Photon.
 * Using Your Phone: Download the Particle Mobile App [iPhone | Android] to create an account and set up your Photon.
 
+<img src="9.jpg" width="500">
+
 ### Step 2: Connect Motion Sensor to Photon
 Connect your sensor to a digital or analog input on the Photon. Follow these examples for hooking up common sensors.
 
@@ -16,18 +18,17 @@ Sensor Pin | Photon Pin
        GND | GND (BLUE)
        OUT | D0 (YELLOW)
 
-![GitHub Logo](6.jpg)
+<img src="6x`.jpg" width="500">
 ￼
-
 ### Step 3: Setup Push Notifications
 To receive your push notification there is a little setup if you’ve never done it before, but once you do you’ll never have to touch it again. There are a ton of services you could use, but the one I like is Pushover.net328. Setup an account with Pushover then follow these instructions:
 
 - Setup New Account
 - Follow below steps (see below image)
-￼
 
+￼<img src="8.jpg" width="500">
 
-￼
+￼<img src="7.jpg" width="500">
 
 - Click on the Pushover logo to get to your dashboard.
 - Copy your User Key. This is the value for the the user query field below.
@@ -42,7 +43,8 @@ To receive your push notification there is a little setup if you’ve never done
 - Click on New Integration
 - Click WebHook > CUSTOM TEMPLATE
 - Paste below text and replace user and token with above user key and API Token
- {
+```
+{
   "eventName": "office-motion",
   "url": "https://api.pushover.net/1/messages.json",
   "requestType": "POST",
@@ -55,6 +57,7 @@ To receive your push notification there is a little setup if you’ve never done
   },
   "mydevices": true
 }
+```
 
 - Click Create WebHook
 
@@ -62,7 +65,8 @@ To receive your push notification there is a little setup if you’ve never done
 
 - Go to https://build.particle.io/build/new 
 - Title: MotionHook
-- Paste Below Code 
+- Paste Below Code
+```
 #define PIR_PIN D0 // Replace D0 with the pin you used 
 void setup() { 
    pinMode(PIR_PIN, INPUT); 
@@ -73,7 +77,8 @@ void loop() {
         Particle.publish("office-motion", "DiningRoom", 60, PRIVATE);
         while (digitalRead(D0) == HIGH); // hang tight here until motion stops
     }
-}  
+} 
+```
 - Click Save
 - Click Flash
 
