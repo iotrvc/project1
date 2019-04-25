@@ -4,6 +4,8 @@ Required Parts:
 Particle Photon Development Kit
 Adafruit PIR (Motion) Sensor
 
+[link](https://docs.particle.io/tutorials/hardware-projects/maker-kit/#tutorial-3-conference-room-monitor)
+
 ### Step 1: Set up your Photon
 - Using Your Computer: Go to particle.io/setup and follow the instructions to create an account and set up your Photon.
 - Using Your Phone & Download the Particle Mobile App [iPhone](https://itunes.apple.com/us/app/particle-build-photon-electron/id991459054?ls=1&mt=8) & [Android](https://play.google.com/store/apps/details?id=io.particle.android.app) to create an account and set up your Photon.
