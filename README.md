@@ -21,11 +21,23 @@ Adafruit PIR (Motion) Sensor
 - Connect your sensor to a digital or analog input on the Photon. Follow these examples for hooking up common sensors.
 ```
 Sensor Pin | Photon Pin
-       VCC | VIN (RED)
-       GND | GND (BLUE)
-       OUT | D0 (YELLOW)
+       VCC | VIN 
+       GND | GND 
+       OUT | D0 
 ```
-<img src="6.jpg" width="500">
+#### Set up the hardware
+
+On the PIR sensor itself, with the back of the PCB facing up, find the two small potentiometers. The one on the left controls the range of the sensor (3-7 meters), and the one on the right controls how long the sensor stays triggered once tripped (1.5 - 300 seconds). 
+
+Set the left (range potentiometer) to middle of dial. 
+
+Set the right (timing potentiometer) all the way to the left (counterclockwise) to maximize its timing resolution.
+
+<img src="6.png" width="500">
+<br>
+Now we'll connect the PIR sensor to the Photon. Press the sensor into the upper-left corner of your breadboard, then connect it to the Photon as follows:
+<br>
+<img src="6.png" width="500">
 
 <hr>
 
