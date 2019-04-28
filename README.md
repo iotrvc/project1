@@ -69,14 +69,14 @@ To receive your push notification there is a little setup if you’ve never done
 - Paste below text and replace user and token with above user key and API Token
 ```
 {
-  "eventName": "office-motion",
+  "eventName": "conference",
   "url": "https://api.pushover.net/1/messages.json",
   "requestType": "POST",
   "query":
   {
     "user": "YOUR_USER_KEY",
     "token": "YOUR_API_TOKEN_KEY",
-    "title": "MOTION",
+    "title": "Conference Room A Status",
     "message": "{{SPARK_EVENT_VALUE}}"
   },
   "mydevices": true
