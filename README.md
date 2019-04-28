@@ -34,7 +34,7 @@ Set the left (range potentiometer) to middle of dial.
 
 Set the right (timing potentiometer) all the way to the left (counterclockwise) to maximize its timing resolution.
 
-<img src="6.png" width="500">
+<img src="6-1.jpg" width="500">
 <br>
 Now we'll connect the PIR sensor to the Photon. Press the sensor into the upper-left corner of your breadboard, then connect it to the Photon as follows:
 <br>
