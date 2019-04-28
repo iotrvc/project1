@@ -65,6 +65,7 @@ To receive your push notification there is a little setup if you’ve never done
 
 - Go to https://console.particle.io/integrations 
 - Click on New Integration
+- Change "Request Format" JSON
 - Click WebHook > CUSTOM TEMPLATE
 - Paste below text and replace user and token with above user key and API Token
 ```
