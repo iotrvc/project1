@@ -6,7 +6,7 @@ Required Parts:
 <!---
 [link](https://docs.particle.io/tutorials/hardware-projects/maker-kit/#tutorial-3-conference-room-monitor)
 --->
-## RESET PHOTON
+### RESET PHOTON
 [reset photon](https://docs.particle.io/tutorials/device-os/led/core/#safe-mode)
 
 ### Step 1: Set up your Photon
