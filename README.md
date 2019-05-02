@@ -3,6 +3,7 @@
 Required Parts:
 <br>- Particle Photon
 <br>- Adafruit PIR (Motion) Sensor
+<br>- OPTIONAL: PowerShield (Battery) link
 <!---
 [link](https://docs.particle.io/tutorials/hardware-projects/maker-kit/#tutorial-3-conference-room-monitor)
 --->
