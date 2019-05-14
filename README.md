@@ -68,6 +68,7 @@ To receive your push notification there is a little setup if you’ve never done
 - Change "Request Format" JSON
 - Click WebHook > CUSTOM TEMPLATE
 - Paste below text and replace user and token with above user key and API Token
+
 ```
 {
   "eventName": "conference",
@@ -82,6 +83,7 @@ To receive your push notification there is a little setup if you’ve never done
   },
   "mydevices": true
 }
+
 ```
 
 - Click Create WebHook
@@ -93,6 +95,7 @@ To receive your push notification there is a little setup if you’ve never done
 - Go to https://build.particle.io/build/new 
 - Title: Conference_Room_Ready
 - Paste Below Code
+
 ```
 /*****************************************************************************
 This tutorial uses a Photon and the PIR motion sensor from the Particle Maker
@@ -140,6 +143,7 @@ void loop() {
 }
 
 ```
+
 - Click Save
 - Click Flash
 
