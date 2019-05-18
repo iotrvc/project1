@@ -2,7 +2,7 @@
 
 Required Parts:
 <br>- Particle Photon [link](https://www.amazon.com/Particle-Reprogrammable-Development-Prototyping-Electronics/dp/B016YNU1A0)
-<br>- Adafruit PIR (Motion) Sensor [link](https://www.amazon.com/Adafruit-LK-918O-SANV-FBACA-PIR-Motion-Sensor/dp/B00JOZTAC6/ref=sr_1_3?keywords=Adafruit+PIR+%28Motion%29+Sensor&qid=1556726112&s=electronics&sr=1-3-catcorr)
+<br>- Adafruit PIR (Motion) Sensor [link](https://www.amazon.com/gp/product/B012ZZ4LPM/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1)
 <br>- OPTIONAL: PowerShield (Battery) [link](https://www.amazon.com/gp/product/B06XJ64G8G/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1)
 <!---
 [link](https://docs.particle.io/tutorials/hardware-projects/maker-kit/#tutorial-3-conference-room-monitor)
