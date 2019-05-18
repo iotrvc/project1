@@ -7,8 +7,11 @@ Required Parts:
 <!---
 [link](https://docs.particle.io/tutorials/hardware-projects/maker-kit/#tutorial-3-conference-room-monitor)
 --->
-### RESET PHOTON
+### RESET PHOTON 
 [reset photon](https://docs.particle.io/tutorials/device-os/led/core/#safe-mode)
+
+### RESET WIFI
+[reset wifi](https://docs.particle.io/tutorials/device-os/led/core/#wi-fi-network-reset)
 
 ### Step 1: Set up your Photon
 - Using Your Computer: Go to particle.io/setup and follow the instructions to create an account and set up your Photon.
