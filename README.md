@@ -108,25 +108,25 @@ for many other applications) and post the status to PushOver.
 
 int ledPin = D7;                 // choose the pin for the LED
 int inputPin = D0;               // choose the PIR sensor pin
-bool available;                  // status of conference room
+bool available = false;                  // status of conference room
 int motionCounter = 0;           // variable to count motion events
 
-Timer timer(30000, determineMotion); // software timer to check every 30s
+Timer timer(60000, determineMotion); // software timer to check every 30s
 
 void setup() {
   pinMode(ledPin, OUTPUT);       // set LED as output
   pinMode(inputPin, INPUT);      // set sensor as input
-
+  determineMotion();
   timer.start(); // start the determineMotion timer
 }
 
 void determineMotion() {    // this function determines if there's motion
-    if(motionCounter < 2) { // if very little motion was detected
+    if(motionCounter < 1) { // if very little motion was detected
         if(available == false) { // only publish if the status changed
              Particle.publish("conference", "Confererence Room A is Available", PRIVATE);
             }
         available = true; // set the status to available
-    } else if (motionCounter >= 2) {
+    } else if (motionCounter >= 1) {
         if(available == true) { // only publish if the status changed
             Particle.publish("conference", "Confererence Room A is In Use", PRIVATE);
             }
