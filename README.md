@@ -72,24 +72,7 @@ To receive your push notification there is a little setup if you’ve never done
 - Paste below text and replace user and token with above user key and API Token
 
 
-```
-
-{
-    "event": "conference-konkol",
-    "url": "https://api.pushover.net/1/messages.json",
-    "requestType": "POST",
-    "noDefaults": false,
-    "rejectUnauthorized": false,
-    "json": true,
-    "query": {
-        "user": "YOUR_USER_KEY",
-        "token": "YOUR_API_TOKEN_KEY",
-        "title": "Conference Room A Status",
-        "message": "{{SPARK_EVENT_VALUE}}"
-    }
-}
-
-```
+<img src="trigger.png" width="500">
 
 - Click Create WebHook
 
