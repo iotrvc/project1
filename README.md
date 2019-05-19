@@ -72,7 +72,7 @@ To receive your push notification there is a little setup if you’ve never done
 - Paste below text and replace user and token with above user key and API Token
 
 
-<img src="trigger.png" width="500">
+<img src="triggers.png" width="500">
 
 - Click Create WebHook
 
