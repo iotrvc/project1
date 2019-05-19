@@ -71,6 +71,7 @@ To receive your push notification there is a little setup if you’ve never done
 - Click WebHook > CUSTOM TEMPLATE
 - Paste below text and replace user and token with above user key and API Token
 
+
 ```
 
 {
