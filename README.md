@@ -95,25 +95,27 @@ int ledPin = D7;                 // choose the pin for the LED
 int inputPin = D0;               // choose the PIR sensor pin
 bool available = false;                  // status of conference room
 int motionCounter = 0;           // variable to count motion events
+bool loadfirst = false;
 
-Timer timer(60000, determineMotion); // software timer to check every 30s
+Timer timer(60000, determineMotion); // software timer to check every 60s
 
 void setup() {
   pinMode(ledPin, OUTPUT);       // set LED as output
   pinMode(inputPin, INPUT);      // set sensor as input
-  determineMotion();
   timer.start(); // start the determineMotion timer
 }
 
 void determineMotion() {    // this function determines if there's motion
     if(motionCounter < 1) { // if very little motion was detected
-        if(available == false) { // only publish if the status changed
+        if(available == false || loadfirst == false) { // only publish if the status changed
              Particle.publish("conference", "Confererence Room A is Available", PRIVATE);
+             loadfirst = true;
             }
         available = true; // set the status to available
-    } else if (motionCounter >= 1) {
+    } else if (motionCounter >= 1 || loadfirst == false) {
         if(available == true) { // only publish if the status changed
             Particle.publish("conference", "Confererence Room A is In Use", PRIVATE);
+            loadfirst = true;
             }
         available = false; // set the status to in use
     }
@@ -129,6 +131,9 @@ void loop() {
   }
   delay(500);                           // wait 0.5s
 }
+
+
+
 
 ```
 
