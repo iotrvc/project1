@@ -85,44 +85,55 @@ To receive your push notification there is a little setup if you’ve never done
 - Title: Conference_Room_Monitor
 - Paste Below Code
 
-```
+
+```cpp
 
 
 /*****************************************************************************
 This tutorial uses a Photon and the PIR motion sensor from the Particle Maker
 Kit to determine whether a conference room is in use (you could also use it
-for many other applications) and post the status to PushOver.
+for many other applications) and post the status to PushOver or IFTTT
 ******************************************************************************/
 
 int ledPin = D7;                 // choose the pin for the LED
 int inputPin = D0;               // choose the PIR sensor pin
-bool available = false;                  // status of conference room
+bool available = false;          // status of conference room
 int motionCounter = 0;           // variable to count motion events
 bool loadfirst = false;
 
-Timer timer(60000, determineMotion); // software timer to check every 60s
+Timer timer(300000, determineMotion); // software timer to check every 5 minutes
 
 void setup() {
   pinMode(ledPin, OUTPUT);       // set LED as output
   pinMode(inputPin, INPUT);      // set sensor as input
+  determineMotion();
   timer.start(); // start the determineMotion timer
 }
 
 void determineMotion() {    // this function determines if there's motion
     if(motionCounter < 1) { // if very little motion was detected
-        if(available == false || loadfirst == false) { // only publish if the status changed
+        if(loadfirst == false){
              loadfirst = true;
+             motionCounter = 0;
+             Particle.publish("conference", "Confererence Room A Monitor Starting", PRIVATE);
+             delay(1000); //stops double posting in IFTTT
+        }
+        else if(available == false) { // only publish if the status changed
+             motionCounter = 0;
              Particle.publish("conference", "Confererence Room A is Available", PRIVATE);
+             delay(1000); //stops double posting in IFTTT
             }
         available = true; // set the status to available
-    } else if (motionCounter >= 1 || loadfirst == false) {
+    } else if (motionCounter >= 1) {
         if(available == true) { // only publish if the status changed
             loadfirst = true;
+             motionCounter = 0;
             Particle.publish("conference", "Confererence Room A is In Use", PRIVATE);
+             delay(1000); //stops double posting in IFTTT
             }
         available = false; // set the status to in use
     }
-    motionCounter = 0; // reset motion counter
+  //  motionCounter = 0; // reset motion counter
 }
 
 void loop() {
@@ -134,6 +145,7 @@ void loop() {
   }
   delay(500);                           // wait 0.5s
 }
+
 
 
 ```
