@@ -112,14 +112,12 @@ void determineMotion() {    // this function determines if there's motion
         if(available == false || loadfirst == false) { // only publish if the status changed
              loadfirst = true;
              Particle.publish("conference", "Confererence Room A is Available", PRIVATE);
-             delay(1000); //stops double posting in IFTTT
             }
         available = true; // set the status to available
     } else if (motionCounter >= 1 || loadfirst == false) {
         if(available == true) { // only publish if the status changed
             loadfirst = true;
             Particle.publish("conference", "Confererence Room A is In Use", PRIVATE);
-             delay(1000); //stops double posting in IFTTT
             }
         available = false; // set the status to in use
     }
