@@ -85,6 +85,8 @@ To receive your push notification there is a little setup if you’ve never done
 - Paste Below Code
 
 ```
+
+
 /*****************************************************************************
 This tutorial uses a Photon and the PIR motion sensor from the Particle Maker
 Kit to determine whether a conference room is in use (you could also use it
@@ -108,14 +110,16 @@ void setup() {
 void determineMotion() {    // this function determines if there's motion
     if(motionCounter < 1) { // if very little motion was detected
         if(available == false || loadfirst == false) { // only publish if the status changed
-             Particle.publish("conference", "Confererence Room A is Available", PRIVATE);
              loadfirst = true;
+             Particle.publish("conference", "Confererence Room A is Available", PRIVATE);
+             delay(1000); //stops double posting in IFTTT
             }
         available = true; // set the status to available
     } else if (motionCounter >= 1 || loadfirst == false) {
         if(available == true) { // only publish if the status changed
-            Particle.publish("conference", "Confererence Room A is In Use", PRIVATE);
             loadfirst = true;
+            Particle.publish("conference", "Confererence Room A is In Use", PRIVATE);
+             delay(1000); //stops double posting in IFTTT
             }
         available = false; // set the status to in use
     }
@@ -131,8 +135,6 @@ void loop() {
   }
   delay(500);                           // wait 0.5s
 }
-
-
 
 
 ```
