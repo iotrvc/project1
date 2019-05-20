@@ -74,6 +74,27 @@ To receive your push notification there is a little setup if you’ve never done
 
 <img src="triggers.png" width="500">
 
+```java
+
+
+{
+    "event": "conference",
+    "url": "https://api.pushover.net/1/messages.json",
+    "requestType": "POST",
+    "noDefaults": false,
+    "rejectUnauthorized": false,
+    "json": true,
+    "query": {
+        "user": "",
+        "token": "",
+        "title": "Conference Room A Status",
+        "message": "{{SPARK_EVENT_VALUE}}"
+    }
+}
+
+
+```
+
 - Click Create WebHook
 
 <hr>
