@@ -74,6 +74,8 @@ To receive your push notification there is a little setup if you’ve never done
 
 <img src="triggers.png" width="500">
 
+
+
 ```java
 
 
