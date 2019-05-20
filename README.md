@@ -76,7 +76,7 @@ To receive your push notification there is a little setup if you’ve never done
 
 
 
-```java
+```cpp
 
 
 {
