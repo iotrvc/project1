@@ -148,7 +148,7 @@ Get App: <a href="https://go.particle.io/shared_apps/5ce31653d1a77e0015c04676" t
 - Click Flash
 
 
-That’s It! You should now see notifications when motion is detected
+That’s It! You should now see notifications via the PushOver App when motion is detected
 
 If all goes well, the D7 LED on your Photon should light up when the sensor detects motion. Note that it stays tripped for a second or two, so it may appear to be sluggish. To make sure it's actually working, hold perfectly still for a few seconds, then move. You'll find that it's sensitive enough to detect very subtle motion, which is great.
 
