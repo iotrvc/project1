@@ -144,8 +144,9 @@ void loop() {
 - Click Save
 - Click Flash
 
-Conference_Room_Monitor
-Get App —> (Click Here)[https://go.particle.io/shared_apps/5ce31653d1a77e0015c04676]
+#### Conference_Room_Monitor
+Get App: <a href="https://go.particle.io/shared_apps/5ce31653d1a77e0015c04676" target="blank">Click Here</a>
+
 
 That’s It! You should now see notifications when motion is detected
 
