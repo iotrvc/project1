@@ -12,6 +12,7 @@ Required Parts:
 
 <a href="https://iotrvc.github.io/reset/" target="blank">Click Here</a>
 
+
 ### Step 2: Connect Motion Sensor to Photon
 - Connect your sensor to a digital or analog input on the Photon. Follow these examples for hooking up common sensors.
 ```
@@ -151,5 +152,9 @@ Get App: <a href="https://go.particle.io/shared_apps/5ce31653d1a77e0015c04676" t
 That’s It! You should now see notifications via the PushOver App when motion is detected
 
 If all goes well, the D7 LED on your Photon should light up when the sensor detects motion. Note that it stays tripped for a second or two, so it may appear to be sluggish. To make sure it's actually working, hold perfectly still for a few seconds, then move. You'll find that it's sensitive enough to detect very subtle motion, which is great.
+
+
+### TROUBLESHOOTING STEPS
+<a href="https://iotrvc.github.io/troubleshooting/" target="blank">Click Here For TroubleShooting Steps</a>
 
 
