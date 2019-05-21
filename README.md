@@ -77,7 +77,6 @@ To receive your push notification there is a little setup if you’ve never done
 - Title: Conference_Room_Monitor
 - Paste Below Code
 
-
 ```cpp
 
 
@@ -144,6 +143,9 @@ void loop() {
 
 - Click Save
 - Click Flash
+
+Conference_Room_Monitor
+Get App —> (Click Here)[https://go.particle.io/shared_apps/5ce31653d1a77e0015c04676]
 
 That’s It! You should now see notifications when motion is detected
 
