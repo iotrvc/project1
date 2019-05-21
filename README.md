@@ -10,7 +10,7 @@ Required Parts:
 
 ### Step 1: SETUP WIFI & RESET PHOTON
 
-Go [here[(https://iotrvc.github.io/reset/)
+Go [here](https://iotrvc.github.io/reset/)
 
 ### Step 2: Connect Motion Sensor to Photon
 - Connect your sensor to a digital or analog input on the Photon. Follow these examples for hooking up common sensors.
