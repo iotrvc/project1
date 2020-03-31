@@ -4,8 +4,7 @@ Required Parts:
 <br>- Particle Photon [link](https://www.amazon.com/Particle-Reprogrammable-Development-Prototyping-Electronics/dp/B016YNU1A0)
 <br>- Adafruit PIR (Motion) Sensor [link](https://www.amazon.com/gp/product/B012ZZ4LPM/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1)
 <br>- OPTIONAL: PowerShield (Battery) [link](https://www.amazon.com/gp/product/B06XJ64G8G/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1)
-<br>
-- 3 Male/Female Wires (Orange, Yellow & Red)
+<br>- 3 Male/Female Wires (Orange, Yellow & Red)
 <!---
 [link](https://docs.particle.io/tutorials/hardware-projects/maker-kit/#tutorial-3-conference-room-monitor)
 --->
