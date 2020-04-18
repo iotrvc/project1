@@ -4,7 +4,7 @@ Required Parts:
 <br>- Particle Photon [link](https://www.amazon.com/Particle-Reprogrammable-Development-Prototyping-Electronics/dp/B016YNU1A0)
 <br>- Adafruit PIR (Motion) Sensor [link](https://www.amazon.com/gp/product/B012ZZ4LPM/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1)
 <br>- OPTIONAL: PowerShield (Battery) [link](https://www.amazon.com/gp/product/B06XJ64G8G/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1)
-<br>- 3 Male/Female Wires (Orange, Yellow & Red)
+<br>- 3 Male/Female Wires (Orange, Yellow & Black)
 <!---
 [link](https://docs.particle.io/tutorials/hardware-projects/maker-kit/#tutorial-3-conference-room-monitor)
 --->
@@ -59,7 +59,7 @@ To receive your push notification there is a little setup if you’ve never done
 
 ### Step 4: Create a WebHook
 
-- Go to https://console.particle.io/integrations 
+- Go to [https://console.particle.io/integrations](https://console.particle.io/integrations)
 - Click on New Integration
 - Change "Request Format" JSON
 - Click WebHook > CUSTOM TEMPLATE
@@ -75,7 +75,7 @@ To receive your push notification there is a little setup if you’ve never done
 
 ### Step 5: Create Particle App
 
-- Go to https://build.particle.io/build/new 
+- Go to [https://build.particle.io/build/new](https://build.particle.io/build/new)
 - Title: Conference_Room_Monitor
 - Paste Below Code
 
