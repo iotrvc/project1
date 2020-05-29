@@ -41,7 +41,8 @@ Now we'll connect the PIR sensor to the Photon. Press the sensor into the upper-
 ### Step 3: Setup Push Notifications
 To receive your push notification there is a little setup if you’ve never done it before, but once you do you’ll never have to touch it again. There are a ton of services you could use, but the one I like is Pushover.net. 
 
-- Setup an account with [Pushover.net](https://pushover.net/) then follow these instructions:
+- Setup an account with <a href="https://pushover.net/" target="blank">Pushover.net</a> then follow these instructions:
+
 - Follow below steps (see below image)
 
 ￼<img src="8.jpg" width="500">
@@ -59,12 +60,12 @@ To receive your push notification there is a little setup if you’ve never done
 
 ### Step 4: Create a WebHook
 
-- Go to [https://console.particle.io/integrations](https://console.particle.io/integrations)
+- Go to <a href="https://console.particle.io/integrations" target="blank">https://console.particle.io/integrations</a>
 - Click on New Integration
 - Change "Request Format" JSON
 - Click WebHook > CUSTOM TEMPLATE
-- Get code <a href="https://raw.githubusercontent.com/iotrvc/project1/master/trigger.txt">here</a> and Copy and replace user and token with above user key and API Token
-
+- Get code <a href="https://raw.githubusercontent.com/iotrvc/project1/master/trigger.txt" target="blank">here</a> and Copy and replace user
+and token with above user key and API Token
 
 <img src="triggers.png" width="500">
 
@@ -75,7 +76,7 @@ To receive your push notification there is a little setup if you’ve never done
 
 ### Step 5: Create Particle App
 
-- Go to [https://build.particle.io/build/new](https://build.particle.io/build/new)
+- Go to <a href="https://build.particle.io/build/new" target="blank">here</a>
 - Title: Conference_Room_Monitor
 - Paste Below Code
 
